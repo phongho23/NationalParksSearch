@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Park Finder</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main class=parkFinderMain>
+        <h1>National Park Finder</h1>
+        <section class=parkFinderForm>
+        <form id="js-form">
+            <label for="search-term">Input State Abbreviations for National Parks Listing</label><br />
+            <input type='text' id="js-search-term" placeholder="Ex:  FL,GA,CT" required />
+            <div>
+                <label for="max-results">Maximum results to return</label><br />
+                <input type="number" name="max-results" id="js-max-results" value="10">
+                <input type="submit" value="Go!">
+            </div>
+        </form>
+        </section>
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+            <h2>Search results</h2>
+            <ul id="results-list">
+            </ul>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
